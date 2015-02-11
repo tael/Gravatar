@@ -1,0 +1,21 @@
+{
+    "name": "tael/gravatar",
+    "type": "library",
+    "description": "gravatar api wrapper",
+    "keywords": ["gravatar"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TaeL Kim",
+            "email": "tael.programmer@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/http-foundation": "^2",
+        "phpunit/phpunit": "4.7.x-dev"
+    },
+    "autoload": {
+        "psr-4": {"Gravatar\\": "src/"}
+    }
+}
