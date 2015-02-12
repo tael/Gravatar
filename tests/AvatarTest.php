@@ -23,15 +23,12 @@ class AvatarTest extends PHPUnit_Framework_TestCase
 
     public function test_addParams()
     {
+        $pairs = ["d" => 404, "a" => "b"];
         self::assertEquals(
             "http://www.gravatar.com/avatar/690cfb93f7b4ff39ce12362ff29b10c9?d=404&a=b",
             Avatar::create()
                 ->setEmail("tikim@yellostory.co.kr")
-                ->addParams([
-                        "d" => 404,
-                        "a" => "b"
-                    ]
-                )
+                ->addParams($pairs)
                 ->getUrl()
         );
     }
