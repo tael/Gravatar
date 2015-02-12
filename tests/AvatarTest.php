@@ -1,6 +1,7 @@
 <?php
 use Gravatar\Avatar;
 
+// TODO: 실제 등록된 이메일 이라면 그라바타에서 이미지를 주고, 아니라면 d=404 옵션을 통해서 존재하지 않음을 확인할 수 있다.
 class AvatarTest extends PHPUnit_Framework_TestCase
 {
     public function test_getUrl()
